@@ -50,7 +50,7 @@ export default function Home() {
             onClick={gerarFaceDadoUm}
             className={`${botaoDadoUmAtivo === true && rodada !== 6 ? "bg-blue-300" :"bg-gray-300" } p-4 w-56 rounded-sm text-xl font-bold`}
             disabled={`${botaoDadoUmAtivo === true && rodada !== 6  ? "" : "disabled"}`}
-            >Gerar Face</button>
+            >Rodar dado</button>
           </div>
           <div className="flex flex-col gap-8">
             <Dado valor={faceDoDadoDois} />
@@ -58,7 +58,7 @@ export default function Home() {
               onClick={gerarFaceDadoDois}
               className={`${botaoDadoUmAtivo === false ? "bg-blue-300" :"bg-gray-300" } p-4 w-56 rounded-sm text-xl font-bold`}
               disabled={`${botaoDadoUmAtivo === false ? "" : "disabled"}`}
-            >Gerar Face</button>
+            >Rodar dado</button>
           </div>
         </div>
         <p>Clique no botão abaixo para gerar uma nova face</p>
