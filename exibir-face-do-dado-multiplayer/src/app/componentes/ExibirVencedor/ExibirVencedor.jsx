@@ -1,4 +1,4 @@
-export default function ExibirVencedor(props) {
+export default function ExibirVencedor({somatorioJogadorUm, somatorioJogadorDois}) {
     const calcularVencedor = (valorJogadorUm, valorJogadorDois) => {
         if (valorJogadorUm > valorJogadorDois) {
           return 1;
@@ -8,20 +8,20 @@ export default function ExibirVencedor(props) {
         return 0;
     }
 
-    if (calcularVencedor(props.somatorioJogadorUm, props.somatorioJogadorDois) === 1) {
+    if (calcularVencedor(somatorioJogadorUm, somatorioJogadorDois) === 1) {
         return (
             <>
-                <h1 className="text-5xl text-bold p-8">Jogador 1 venceu</h1>
+                <h1 className="text-5xl text-bold p-8">Jogador 1 ganhou!</h1>
                 <button 
                     onClick={() => window.location.reload()}
                     className="p-4 w-56 rounded-sm text-xl font-bold bg-blue-300"        
                 >Jogar novamente</button>
             </>
         )
-    } else if (calcularVencedor(props.somatorioJogadorUm, props.somatorioJogadorDois) === 2) {
+    } else if (calcularVencedor(somatorioJogadorUm, somatorioJogadorDois) === 2) {
         return (
             <>
-                <h1 className="text-5xl text-bold p-8">Jogador 2 venceu</h1>
+                <h1 className="text-5xl text-bold p-8">Jogador 2 ganhou!</h1>
                 <button 
                     onClick={() => window.location.reload()}
                     className="p-4 w-56 rounded-sm text-xl font-bold bg-blue-300"        
