@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function SobreMim() {
     return (
         <>
-            <div className="flex flex-center items-center justify-center h-screen w-screen gap-4">
+            <div className="flex flex-center items-center justify-center h-screen w-full gap-4">
                 <header className="p-4 flex flex-col bg-green-100 rounded-sm w-[400] h-[530] text-center justify-center items-center gap-4">
                     <Image src="/perfil.jpeg" alt="Imagem de perfil" width={200} height={200} className="rounded-full" />
                     <div className="flex flex-col gap-2">

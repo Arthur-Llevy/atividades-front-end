@@ -1,5 +1,6 @@
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import Menu from "./componentes/menu";
 
 const raleway = Raleway();
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${raleway.className} antialiased`}
       >
+        <Menu />
         {children}
       </body>
     </html>
