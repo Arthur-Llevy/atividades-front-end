@@ -10,7 +10,7 @@ export default function SobreMim() {
                     <div className="flex flex-col gap-2">
                         <p>Olá, me chamo Arthur Levy, desenvolvedor Full Stack.</p>
                         <p>Técnico em Desenvolvimento de Sistemas pela Escola Técnica Ginásio Pernambucano.</p>
-                        <p>Graduando em Sistemas para Internet e Egenharia da Computação pela Unicap e Poli-Upe, respectivamente.</p>
+                        <p>Graduando em Sistemas para Internet e Engenharia da Computação pela Unicap e Poli-Upe, respectivamente.</p>
                     </div>
                 </header>
                 <main className="p-4 flex flex-col bg-green-100 rounded-sm w-[400] h-[530] text-center justify-center items-center gap-4">
